@@ -4,6 +4,7 @@
     <SubmitContainer></SubmitContainer>
     <HowItWorks></HowItWorks>
     <MonthlyMenu></MonthlyMenu>
+    <FeaturedMenu></FeaturedMenu>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import NavBar from "@/components/NavBar.vue";
 import SubmitContainer from "./components/SubmitContainer.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import MonthlyMenu from "./components/MonthlyMenu.vue";
+import FeaturedMenu from "./components/FeaturedMenu.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     SubmitContainer,
     HowItWorks,
     MonthlyMenu,
+    FeaturedMenu,
   },
 };
 </script>

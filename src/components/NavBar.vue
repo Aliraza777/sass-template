@@ -172,7 +172,7 @@ import * as jQuery from "jquery";
 export default {};
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 $content-width: 100%
 $breakpoint: 799px
 $nav-height: 70px

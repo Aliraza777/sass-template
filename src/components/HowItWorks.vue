@@ -93,13 +93,22 @@ export default {};
                 color: #fafbfc
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
         .weCook
             width: 366px
             height: 293px
             border-radius: 40px
             filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
-            background-color: #ffffff
-            border: 3px solid #ffc400
+            background-color: #00ccbb
+            border: 3px solid #ffffff
             display: flex
             flex-direction: column
             justify-content: center
@@ -112,13 +121,22 @@ export default {};
                 height: 188px
             .title
                 font-size: 24px
-                color: #424142
+                color: #fafbfc
                 font-family: "Raleway"
             .subtitle
                 font-size: 15px
-                color: #424142
+                color: #fafbfc
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
         .weDeliver
             width: 366px
             height: 293px
@@ -145,6 +163,15 @@ export default {};
                 color: #ffffff
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
 @media screen and (max-width: 799px)
   .container
     width: 100%
@@ -206,14 +233,23 @@ export default {};
                 color: #fafbfc
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
         .weCook
             margin-bottom: 30px
             width: 430px
             height: 180px
             border-radius: 20px
             filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
-            background-color: #ffffff
-            border: 3px solid #ffc400
+            background-color: #00ccbb
+            border: 3px solid #ffffff
             display: flex
             flex-direction: column
             justify-content: center
@@ -226,11 +262,11 @@ export default {};
                 height: 118px
             .title
                 font-size: 24px
-                color: #424142
+                color: #fafbfc
                 font-family: "Raleway"
             .subtitle
                 font-size: 15px
-                color: #424142
+                color: #fafbfc
                 font-weight: 500
                 font-family: "Work Sans"
         .weDeliver
