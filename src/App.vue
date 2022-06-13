@@ -6,6 +6,7 @@
     <MonthlyMenu></MonthlyMenu>
     <FeaturedMenu></FeaturedMenu>
     <BenefitsComponent></BenefitsComponent>
+    <TestimonialsComponent></TestimonialsComponent>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import HowItWorks from "./components/HowItWorks.vue";
 import MonthlyMenu from "./components/MonthlyMenu.vue";
 import FeaturedMenu from "./components/FeaturedMenu.vue";
 import BenefitsComponent from "./components/BenefitsComponent.vue";
+import TestimonialsComponent from "./components/TestimonialsComponent.vue";
 
 export default {
   name: "App",
@@ -26,11 +28,14 @@ export default {
     MonthlyMenu,
     FeaturedMenu,
     BenefitsComponent,
+    TestimonialsComponent,
   },
 };
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@200;300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@200;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
 @font-face {
