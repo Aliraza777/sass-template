@@ -5,6 +5,7 @@
     <HowItWorks></HowItWorks>
     <MonthlyMenu></MonthlyMenu>
     <FeaturedMenu></FeaturedMenu>
+    <BenefitsComponent></BenefitsComponent>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import SubmitContainer from "./components/SubmitContainer.vue";
 import HowItWorks from "./components/HowItWorks.vue";
 import MonthlyMenu from "./components/MonthlyMenu.vue";
 import FeaturedMenu from "./components/FeaturedMenu.vue";
+import BenefitsComponent from "./components/BenefitsComponent.vue";
 
 export default {
   name: "App",
@@ -23,6 +25,7 @@ export default {
     HowItWorks,
     MonthlyMenu,
     FeaturedMenu,
+    BenefitsComponent,
   },
 };
 </script>

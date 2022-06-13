@@ -61,6 +61,7 @@ export default {};
     .Tag
         padding-top: 60px
         display: flex
+        flex-wrap: wrap
         flex-direction: row
         justify-content: space-around
         align-items: center
@@ -269,6 +270,15 @@ export default {};
                 color: #fafbfc
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
         .weDeliver
             width: 430px
             height: 180px
@@ -295,4 +305,13 @@ export default {};
                 color: #ffffff
                 font-weight: 500
                 font-family: "Work Sans"
+            &:hover
+                cursor: pointer
+                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
+                background-color: #ffffff
+                border: 3px solid #ffc400
+                .title
+                    color: #424142
+                .subtitle
+                    color: #424142
 </style>

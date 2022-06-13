@@ -66,7 +66,7 @@ export default {};
           font-weight: 600
           font-family: "Montserrat"
         .submitBtn
-          margin-top: 120px
+          margin-top: 130px
           width: 163px
           height: 48px
           border-radius: 11px
@@ -91,7 +91,7 @@ export default {};
 @media screen and (max-width: 799px)
   .body
     width: 100%
-    height: 684px
+    height: 799px
     .container
       display: flex
       flex-direction: column
