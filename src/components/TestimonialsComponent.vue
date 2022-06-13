@@ -16,8 +16,19 @@
         </p>
       </div>
     </div>
-    <div class="rowBody">
-      <div class="prev-arrow"></div>
+    <div class="row-body">
+      <div class="prev-arrow"><img src="../assets/prev-arrow.svg" /></div>
+      <div class="profile">
+        <div class="profileImg">
+          <img class="bg-img" src="../assets/profile-bg.svg" /><img
+            class="actual-img"
+            src="../assets/profile.png"
+          />
+        </div>
+        <div class="name">Talal Anwar</div>
+        <div class="designation">CEO</div>
+      </div>
+      <div class="next-arrow"><img src="../assets/next-arrow.svg" /></div>
     </div>
   </div>
 </template>
@@ -53,4 +64,67 @@ export default {};
             color: #666666
             font-weight: 500
             font-family: "Work Sans"
+    .row-body
+        margin-top: 50px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        .prev-arrow
+            margin-left: 50px
+        .profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            // justify-content: center
+            .profileImg
+                margin: 20px 0 0 0
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                // position: relative
+                // top: 0
+                // left: 0
+                // .bg-img
+                //     position: absolute
+                //     top: 0
+                //     left: 0
+                .bg-img
+                    position: absolute
+                    top: 30px
+                    left: 0
+                .actual-img
+                    position: relative
+                    top: 0
+                    left: 0
+            .name
+                margin: 20px 0 0 0
+                font-size: 20px
+                color: #00ccbb
+                font-family: "Raleway"
+            .designation
+                margin: 20px 0 0 0
+                font-size: 18px
+                color: #000000
+                font-family: "Raleway"
+        .next-arrow
+            margin-right: 50px
+@media screen and (max-width: 768px)
+    .testimonial-body
+        height: auto
+        width: 100%
+        .main
+            .title
+                font-size: 30px
+            .description
+                font-size: 16px
+                width: 430px
+                height: 125px
+            .row-body
+                .profile
+                    .name
+                        font-size: 20px
+                    .designation
+                        font-size: 17px
 </style>
