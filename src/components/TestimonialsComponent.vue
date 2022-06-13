@@ -40,7 +40,7 @@ export default {};
 <style lang="sass" scoped>
 .testimonial-body
     width: 100%
-    height: 632px
+    height: 680px
     background-color: #ffffff
     .main
         display: flex
@@ -83,17 +83,17 @@ export default {};
                 flex-direction: column
                 align-items: center
                 justify-content: center
-                // position: relative
-                // top: 0
-                // left: 0
-                // .bg-img
-                //     position: absolute
-                //     top: 0
-                //     left: 0
+                position: relative
+                top: 0
+                left: 0
                 .bg-img
                     position: absolute
-                    top: 30px
+                    top: -30px
                     left: 0
+                .bg-img
+                    position: absolute
+                    top: -3px
+                    left: -2px
                 .actual-img
                     position: relative
                     top: 0
@@ -104,7 +104,7 @@ export default {};
                 color: #00ccbb
                 font-family: "Raleway"
             .designation
-                margin: 20px 0 0 0
+                margin: 20px 0 20px 0
                 font-size: 18px
                 color: #000000
                 font-family: "Raleway"
@@ -112,7 +112,7 @@ export default {};
             margin-right: 50px
 @media screen and (max-width: 768px)
     .testimonial-body
-        height: auto
+        height: 650px
         width: 100%
         .main
             .title
@@ -127,4 +127,5 @@ export default {};
                         font-size: 20px
                     .designation
                         font-size: 17px
+                        margin-bottom: 20px
 </style>
