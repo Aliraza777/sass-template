@@ -173,7 +173,7 @@ export default {};
                     color: #424142
                 .subtitle
                     color: #424142
-@media screen and (max-width: 799px)
+@media screen and (max-width: 1150px)
   .container
     width: 100%
     height: 900px

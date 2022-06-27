@@ -33,6 +33,8 @@
               class="form-control"
               id="email"
               placeholder="Please write your email here"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              hint="example@gmail.com"
             />
           </div>
           <div class="form-group">
@@ -44,6 +46,8 @@
               class="form-control"
               id="phone"
               placeholder="Please write your phone number here"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              hint="1234567890"
             />
           </div>
           <div class="form-group">
@@ -55,6 +59,8 @@
               class="form-control"
               id="people"
               placeholder="Please write the number of people here"
+              pattern="[0-9]{1,}"
+              hint="0 or more"
             />
           </div>
           <div class="form-group">
@@ -66,6 +72,7 @@
               id="message"
               rows="3"
               placeholder="Please write your message here"
+              pattern="[a-zA-Z0-9]{1,}"
             ></textarea>
           </div>
         </div>
