@@ -283,7 +283,7 @@ export default {
                   // display: flex
                   // flex-direction: column
                   .form-group
-                      margin-top: 10px
+                      margin: 10px 50px 10px 50px
                       padding: 0px
                       #name
                           margin: 0
@@ -311,7 +311,7 @@ export default {
                           height: 115px
                           border-radius: 9px
               .btn-primary
-                  margin: 50px 0 0 0
+                  margin: 30px 0 0 0
 
                   width: 163px
                   height: 48px
