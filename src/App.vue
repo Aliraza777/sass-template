@@ -7,7 +7,9 @@
     <FeaturedMenu></FeaturedMenu>
     <BenefitsComponent></BenefitsComponent>
     <TestimonialsComponent></TestimonialsComponent>
+    <OrderPlacement></OrderPlacement>
     <ContactUs></ContactUs>
+    <!-- <HomeView></HomeView> -->
   </div>
 </template>
 
@@ -20,10 +22,12 @@ import FeaturedMenu from "./components/FeaturedMenu.vue";
 import BenefitsComponent from "./components/BenefitsComponent.vue";
 import TestimonialsComponent from "./components/TestimonialsComponent.vue";
 import ContactUs from "./components/ContactUs.vue";
-
+// import HomeView from "./views/HomeView.vue";
+import OrderPlacement from "./components/OrderPlacement.vue";
 export default {
   name: "App",
   components: {
+    // HomeView,
     NavBar,
     SubmitContainer,
     HowItWorks,
@@ -31,6 +35,7 @@ export default {
     FeaturedMenu,
     BenefitsComponent,
     TestimonialsComponent,
+    OrderPlacement,
     ContactUs,
   },
 };

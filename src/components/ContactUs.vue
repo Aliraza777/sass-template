@@ -128,6 +128,7 @@ export default {};
                 font-weight: 500
                 font-family: "Montserrat"
         .email
+            color: #ffffff
             display: flex
             flex-direction: row
             justify-content: space-between

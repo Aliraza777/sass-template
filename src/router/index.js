@@ -1,6 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+// import DishesView from "../views/DishesView.vue";
+// import app from "../App.vue";
 
 Vue.use(VueRouter);
 
@@ -10,6 +12,11 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+  // {
+  //   path: "/dishes",
+  //   name: "dishes",
+  //   component: app,
+  // },
 ];
 
 const router = new VueRouter({

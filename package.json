@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "nodemon index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -12,8 +13,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/vue-fontawesome": "^2.0.6",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
     "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
     "jquery": "^3.6.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.21.0",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -36,5 +44,18 @@
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "vue-template-compiler": "^2.6.14"
-  }
+  },
+  "description": "## Project setup ``` npm install ```",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aliraza777/sass-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aliraza777/sass-template/issues"
+  },
+  "homepage": "https://github.com/Aliraza777/sass-template#readme"
 }

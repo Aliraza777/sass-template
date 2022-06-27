@@ -42,34 +42,54 @@
               </div>
               <div class="toggledishes">
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/manchorian.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '1' && dish.day === '1'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Manchurian</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/curry-pakora.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '1' && dish.day === '2'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Curry Pakora</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenhaleem.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '1' && dish.day === '3'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Haleem</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenkarahi.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '1' && dish.day === '4'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Karhai</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenbiryani.png" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '1' && dish.day === '5'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Briyani</div>
                 </div>
               </div>
             </div>
@@ -104,34 +124,54 @@
               </div>
               <div class="toggledishes">
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/manchorian.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '2' && dish.day === '1'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Chilli Dry</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/curry-pakora.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '2' && dish.day === '2'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Palak Paneer</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenhaleem.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '2' && dish.day === '3'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Aloo / Chicken Paratha</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenkarahi.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '2' && dish.day === '4'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Black Pepper Karhai</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenbiryani.png" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '2' && dish.day === '5'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Pulao</div>
                 </div>
               </div>
             </div>
@@ -166,34 +206,54 @@
               </div>
               <div class="toggledishes">
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/manchorian.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '3' && dish.day === '1'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Chilli Dry</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/curry-pakora.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '3' && dish.day === '2'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Palak Paneer</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenhaleem.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '3' && dish.day === '3'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Aloo / Chicken Paratha</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenkarahi.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '3' && dish.day === '4'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Black Pepper Karhai</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenbiryani.png" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '3' && dish.day === '5'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Pulao</div>
                 </div>
               </div>
             </div>
@@ -228,34 +288,54 @@
               </div>
               <div class="toggledishes">
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/manchorian.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '4' && dish.day === '1'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Chilli Dry</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/curry-pakora.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '4' && dish.day === '2'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Palak Paneer</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenhaleem.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '4' && dish.day === '3'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Aloo / Chicken Paratha</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenkarahi.svg" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '4' && dish.day === '4'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Black Pepper Karhai</div>
                 </div>
                 <div class="toggledish">
-                  <div class="dishpic">
-                    <img src="../assets/chickenbiryani.png" />
+                  <div v-for="dish in allDishes" :key="dish.id">
+                    <div v-if="dish.week === '4' && dish.day === '5'">
+                      <div class="dishpic">
+                        <img :src="dish.img" />
+                      </div>
+                      <div class="dishtitle">{{ dish.name }}</div>
+                    </div>
                   </div>
-                  <div class="dishtitle">Chicken Pulao</div>
                 </div>
               </div>
             </div>
@@ -291,125 +371,333 @@
           <div class="week1">
             <div class="weektitle">Week 1</div>
             <div class="dish">
-              <div class="dishImg"><img src="../assets/manchorian.svg" /></div>
-              <div class="dishName">Chicken Manchurian</div>
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '1' && dish.day === '1'"
+                  class="dishImg"
+                >
+                  <img v-bind:src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '1' && dish.day === '1'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
+              </div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/curry-pakora.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '1' && dish.day === '2'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '1' && dish.day === '2'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Curry Pakora</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenhaleem.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '1' && dish.day === '3'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '1' && dish.day === '3'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Haleem</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenkarahi.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '1' && dish.day === '4'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '1' && dish.day === '4'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Karhai</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenbiryani.png" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '1' && dish.day === '5'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '1' && dish.day === '5'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Briyani</div>
             </div>
           </div>
           <div class="week2">
             <div class="weektitle">Week 2</div>
             <div class="dish">
-              <div class="dishImg"><img src="../assets/manchorian.svg" /></div>
-              <div class="dishName">Chicken Chilli Dry</div>
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '2' && dish.day === '1'"
+                  class="dishImg"
+                >
+                  <img v-bind:src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '2' && dish.day === '1'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
+              </div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/curry-pakora.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '2' && dish.day === '2'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '2' && dish.day === '2'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Palak Paneer</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenhaleem.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '2' && dish.day === '3'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '2' && dish.day === '3'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Aloo / Chicken Paratha</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenkarahi.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '2' && dish.day === '4'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '2' && dish.day === '4'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Black Pepper Karhai</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenbiryani.png" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '2' && dish.day === '5'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '2' && dish.day === '5'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Pulao</div>
             </div>
           </div>
           <div class="week3">
             <div class="weektitle">Week 3</div>
             <div class="dish">
-              <div class="dishImg"><img src="../assets/manchorian.svg" /></div>
-              <div class="dishName">Black Pepper Chicken</div>
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '3' && dish.day === '1'"
+                  class="dishImg"
+                >
+                  <img v-bind:src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '3' && dish.day === '1'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
+              </div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/curry-pakora.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '3' && dish.day === '2'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '3' && dish.day === '2'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Daal Maash</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenhaleem.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '3' && dish.day === '3'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '3' && dish.day === '3'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">BBQ</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenkarahi.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '3' && dish.day === '4'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '3' && dish.day === '4'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Anda Kofta</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenbiryani.png" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '3' && dish.day === '5'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '3' && dish.day === '5'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Briyani</div>
             </div>
           </div>
           <div class="week4">
             <div class="weektitle">Week 4</div>
             <div class="dish">
-              <div class="dishImg"><img src="../assets/manchorian.svg" /></div>
-              <div class="dishName">Chicken Manchurian</div>
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '4' && dish.day === '1'"
+                  class="dishImg"
+                >
+                  <img v-bind:src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '4' && dish.day === '1'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
+              </div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/curry-pakora.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '4' && dish.day === '2'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '4' && dish.day === '2'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Palak Paneer</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenhaleem.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '4' && dish.day === '3'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '4' && dish.day === '3'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Aloo / Chicken paratha</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenkarahi.svg" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '4' && dish.day === '4'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '4' && dish.day === '4'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Korma</div>
             </div>
             <div class="dish">
-              <div class="dishImg">
-                <img src="../assets/chickenbiryani.png" />
+              <div v-for="dish in allDishes" :key="dish.id">
+                <div
+                  v-if="dish.week === '4' && dish.day === '5'"
+                  class="dishImg"
+                >
+                  <img :src="dish.img" />
+                </div>
+                <div
+                  v-if="dish.week === '4' && dish.day === '5'"
+                  class="dishName"
+                >
+                  {{ dish.name }}
+                </div>
               </div>
-              <div class="dishName">Chicken Daal Chana with Rice</div>
             </div>
           </div>
         </div>
@@ -419,7 +707,36 @@
 </template>
 
 <script>
-export default {};
+// import axios from "axios";
+import { mapGetters, mapActions } from "vuex";
+export default {
+  data() {
+    return {
+      data: null,
+      featured: null,
+    };
+  },
+  methods: {
+    ...mapActions(["fetchDishes"]),
+  },
+  computed: mapGetters(["allDishes"]),
+  created() {
+    this.fetchDishes();
+  },
+  // mounted() {
+  //   axios
+  //     .get("http://localhost:5000/dishes/")
+  //     .then((response) => {
+  //       console.log(response.data);
+  //       this.data = response.data;
+  //       // this.dishes.name = response.data.name;
+  //       // this.dishes.Image = response.data.Image;
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // },
+};
 </script>
 
 <style lang="sass" scoped>
@@ -532,7 +849,10 @@ export default {};
                     .dishImg
                         position: absolute
                         top: -30%
-                        left: 40%
+                        left: 35%
+                        width: 75px
+                        img
+                            width: 70%
                     .dishName
                         margin-top: 40px
                         font-size: 16px
@@ -569,7 +889,10 @@ export default {};
                     .dishImg
                         position: absolute
                         top: -30%
-                        left: 40%
+                        left: 35%
+                        width: 75px
+                        img
+                            width: 70%
                     .dishName
                         margin-top: 40px
                         font-size: 16px
@@ -606,7 +929,10 @@ export default {};
                     .dishImg
                         position: absolute
                         top: -30%
-                        left: 40%
+                        left: 35%
+                        width: 75px
+                        img
+                            width: 70%
                     .dishName
                         margin-top: 40px
                         font-size: 16px
@@ -643,7 +969,10 @@ export default {};
                     .dishImg
                         position: absolute
                         top: -30%
-                        left: 40%
+                        left: 35%
+                        width: 75px
+                        img
+                            width: 70%
                     .dishName
                         margin-top: 40px
                         font-size: 16px
@@ -736,11 +1065,14 @@ export default {};
                                 background-color: #ffffff
                                 border: 3px solid #37b2a4
                                 .dishpic
+                                    width: 50%
                                     position: absolute
-                                    top: -30%
+                                    top: -40%
                                     left: 40%
+                                    img
+                                      width: 50%
                                 .dishtitle
-                                    margin-top: 10px
+                                    margin-top: 20px
                                     font-size: 16px
                                     color: #000000
                                     font-family: "Raleway"

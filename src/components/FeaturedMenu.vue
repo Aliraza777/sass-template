@@ -17,30 +17,44 @@
           <div class="arrow"><img src="../assets/arrow.svg" /></div>
         </div>
       </div>
+
       <div class="Haleem">
-        <div class="HaleemImg">
-          <img class="backgroundPath" src="../assets/Path6.svg" />
-          <img class="togglePath" src="../assets/Path3.svg" />
-          <img class="actual" src="../assets/testHaleem.svg" />
+        <div v-for="dish in allfeatured" :key="dish.id">
+          <div v-if="dish.id === 1">
+            <div class="HaleemImg">
+              <img class="backgroundPath" src="../assets/Path6.svg" />
+              <img class="togglePath" src="../assets/Path3.svg" />
+              <img class="actual" :src="dish.img" />
+            </div>
+            <div class="DishName">{{ dish.name }}</div>
+          </div>
         </div>
-        <div class="DishName">Haleem</div>
       </div>
       <div class="VegetableRice">
-        <div class="RiceImg">
-          <img class="backgroundRice" src="../assets/Path6.svg" />
-          <img class="togglePath" src="../assets/Path3.svg" />
-          <img class="actualRice" src="../assets/rice.svg" />
+        <div v-for="dish in allfeatured" :key="dish.id">
+          <div v-if="dish.id === 2">
+            <div class="RiceImg">
+              <img class="backgroundRice" src="../assets/Path6.svg" />
+              <img class="togglePath" src="../assets/Path3.svg" />
+              <img class="actualRice" :src="dish.img" />
+            </div>
+            <div class="DishName">{{ dish.name }}</div>
+          </div>
         </div>
-        <div class="DishName">Vegetable Rice</div>
       </div>
       <div class="Briyani">
-        <div class="BriyaniImg">
-          <img class="backgroundBriyani" src="../assets/Path6.svg" />
-          <img class="togglePath" src="../assets/Path3.svg" />
-          <img class="actualBriyani" src="../assets/briyani2.png" />
+        <div v-for="dish in allfeatured" :key="dish.id">
+          <div v-if="dish.id === 3">
+            <div class="BriyaniImg">
+              <img class="backgroundBriyani" src="../assets/Path6.svg" />
+              <img class="togglePath" src="../assets/Path3.svg" />
+              <img class="actualBriyani" :src="dish.img" />
+              <div class="DishName">{{ dish.name }}</div>
+            </div>
+          </div>
         </div>
-        <div class="DishName">Briyani</div>
       </div>
+
       <div class="Next">
         <div class="circle">
           <img src="../assets/circle.svg" />
@@ -53,7 +67,33 @@
 </template>
 
 <script>
-export default {};
+// import axios from "axios";
+import { mapActions, mapGetters } from "vuex";
+export default {
+  data() {
+    return {
+      featured: null,
+    };
+  },
+  methods: {
+    ...mapActions(["fetchFeatured"]),
+  },
+  computed: mapGetters(["allfeatured"]),
+  created() {
+    this.fetchFeatured();
+  },
+  //   mounted() {
+  //     axios
+  //       .get("http://localhost:5000/dishes/featured/")
+  //       .then((response) => {
+  //         console.log(response.data);
+  //         this.featured = response.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+};
 </script>
 
 <style lang="sass" scoped>
@@ -117,7 +157,7 @@ export default {};
         .Haleem
             display: flex
             flex-direction: column
-            justify-content: space-around
+            justify-content: center
             align-items: center
             width: 342px
             height: 236px
@@ -136,10 +176,12 @@ export default {};
                     top: -80px
                     left: 60px
                 .actual
+                    width: 60%
                     position: absolute
                     top: -75px
-                    left: 64px
+                    left: 67px
             .DishName
+                margin-top: 100px
                 text-transform: uppercase
                 font-size: 20px
                 color: #ffffff
@@ -164,7 +206,7 @@ export default {};
         .VegetableRice
             display: flex
             flex-direction: column
-            justify-content: space-around
+            justify-content: center
             align-items: center
             width: 342px
             height: 236px
@@ -183,10 +225,12 @@ export default {};
                     top: -80px
                     left: 60px
                 .actualRice
+                    width: 60%
                     position: absolute
-                    top: -77px
-                    left: 64px
+                    top: -76px
+                    left: 66px
             .DishName
+                margin-top: 100px
                 text-transform: uppercase
                 font-size: 20px
                 color: #ffffff
@@ -204,7 +248,7 @@ export default {};
                         position: absolute !important
                         top: -81px
                         left: 60px
-                    .backgroundPath
+                    .backgroundRice
                         display: none
                 .DishName
                     color: #00ccbb
@@ -212,7 +256,7 @@ export default {};
         .Briyani
             display: flex
             flex-direction: column
-            justify-content: space-around
+            justify-content: center
             align-items: center
             width: 342px
             height: 236px
@@ -231,10 +275,12 @@ export default {};
                     top: -80px
                     left: 70px
                 .actualBriyani
+                    width: 60%
                     position: absolute
-                    top: -92px
-                    left: 38px
+                    top: -76px
+                    left: 76px
             .DishName
+                margin-top: 100px
                 text-transform: uppercase
                 font-size: 20px
                 color: #ffffff
