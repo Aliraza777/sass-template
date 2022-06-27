@@ -105,11 +105,19 @@ export default {
           console.log(error);
         });
       // this.name = this.name.trim();
+      this.name = "";
+      this.email = "";
+      this.phone = "";
+      this.people = "";
+      this.message = "";
       console.log(this.name);
       console.log(this.email);
       console.log(this.phone);
       console.log(this.people);
       console.log(this.message);
+      alert(
+        "Thank you for your message! Your Message has been sent successfully!"
+      );
     },
   },
 };
