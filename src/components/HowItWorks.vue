@@ -175,38 +175,20 @@ export default {};
                     color: #424142
 @media screen and (max-width: 1150px)
   .container
-    width: 100%
     height: 900px
-    background-color: #ffffff
     .Main
         padding-top: 40px
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
         .logo
             padding: 5px
-            width: 35px
-            height: 27px
         .mainText
             padding: 5px
-            font-size: 30px
-            letter-spacing: 4px
-            color: #212121
-            font-family: "Raleway"
         .curly-path
             padding:5px
-            width: 212px
-            height: 17px
     .Tag
         padding-top: 30px
         display: flex
         flex-direction: column
         justify-content: space-around
-        align-items: center
-        position: relative
-        top: 0
-        left: 0
         .youOrder
             margin-bottom: 30px
             width: 430px
@@ -225,24 +207,6 @@ export default {};
                 left: 160px
                 width: 118px
                 height: 118px
-            .title
-                font-size: 24px
-                color: #fafbfc
-                font-family: "Raleway"
-            .subtitle
-                font-size: 15px
-                color: #fafbfc
-                font-weight: 500
-                font-family: "Work Sans"
-            &:hover
-                cursor: pointer
-                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
-                background-color: #ffffff
-                border: 3px solid #ffc400
-                .title
-                    color: #424142
-                .subtitle
-                    color: #424142
         .weCook
             margin-bottom: 30px
             width: 430px
@@ -261,24 +225,6 @@ export default {};
                 left: 160px
                 width: 118px
                 height: 118px
-            .title
-                font-size: 24px
-                color: #fafbfc
-                font-family: "Raleway"
-            .subtitle
-                font-size: 15px
-                color: #fafbfc
-                font-weight: 500
-                font-family: "Work Sans"
-            &:hover
-                cursor: pointer
-                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
-                background-color: #ffffff
-                border: 3px solid #ffc400
-                .title
-                    color: #424142
-                .subtitle
-                    color: #424142
         .weDeliver
             width: 430px
             height: 180px
@@ -296,22 +242,4 @@ export default {};
                 left: 160px
                 width: 118px
                 height: 118px
-            .title
-                font-size: 24px
-                color: #ffffff
-                font-family: "Raleway"
-            .subtitle
-                font-size: 15px
-                color: #ffffff
-                font-weight: 500
-                font-family: "Work Sans"
-            &:hover
-                cursor: pointer
-                filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
-                background-color: #ffffff
-                border: 3px solid #ffc400
-                .title
-                    color: #424142
-                .subtitle
-                    color: #424142
 </style>
