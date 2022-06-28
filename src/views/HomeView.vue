@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="App">
     <h1 v-for="dish in dishes" :key="dish.id">
       dishes are {{ dish.name }}
@@ -30,4 +30,4 @@ export default {
       });
   },
 };
-</script>
+</script> -->

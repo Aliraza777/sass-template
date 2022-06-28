@@ -3,7 +3,8 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 // import DishesView from "../views/DishesView.vue";
 // import app from "../App.vue";
-
+// import navBar from "../components/NavBar.vue";
+import orderplacement from "../components/OrderPlacement.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -13,10 +14,15 @@ const routes = [
     component: HomeView,
   },
   // {
-  //   path: "/dishes",
-  //   name: "dishes",
-  //   component: app,
+  //   path: "/home",
+  //   name: "navbar",
+  //   component: navBar,
   // },
+  {
+    path: "/#order-form",
+    name: "orderplacement",
+    component: orderplacement,
+  },
 ];
 
 const router = new VueRouter({

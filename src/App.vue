@@ -39,6 +39,7 @@ export default {
     ContactUs,
   },
 };
+// this.router.go("/");
 </script>
 
 <style lang="scss">

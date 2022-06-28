@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="Main">
+    <div class="Main" id="order-form">
       <div>
         <img class="logo" src="../assets/logo.svg" />
       </div>
@@ -33,7 +33,6 @@
               class="form-control"
               id="email"
               placeholder="Please write your email here"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
               hint="example@gmail.com"
             />
           </div>
@@ -46,7 +45,7 @@
               class="form-control"
               id="phone"
               placeholder="Please write your phone number here"
-              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              pattern="[0-9]{11}"
               hint="1234567890"
             />
           </div>
@@ -59,8 +58,6 @@
               class="form-control"
               id="people"
               placeholder="Please write the number of people here"
-              pattern="[0-9]{1,}"
-              hint="0 or more"
             />
           </div>
           <div class="form-group">
@@ -72,7 +69,6 @@
               id="message"
               rows="3"
               placeholder="Please write your message here"
-              pattern="[a-zA-Z0-9]{1,}"
             ></textarea>
           </div>
         </div>
@@ -97,37 +93,45 @@ export default {
   },
   methods: {
     submit() {
-      axios
-        .post("https://formspree.io/f/xbjwepoo", {
-          name: this.name,
-          email: this.email,
-          phone: this.phone,
-          people: this.people,
-          message: this.message,
-        })
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-      // this.name = this.name.trim();
+      if (
+        this.name == "" ||
+        this.email == "" ||
+        this.phone == "" ||
+        this.people == "" ||
+        this.message == ""
+      ) {
+        alert("Please fill all the fields");
+      } else {
+        axios
+          .post("https://formspree.io/f/xbjwepoo", {
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            people: this.people,
+            message: this.message,
+          })
+          .then((response) => {
+            console.log(response);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+        alert(
+          "Thank you for your message! Your Message has been sent successfully!"
+        );
+        let redirect = this.$route.query.redirect || "/";
+        this.$router.push(redirect);
+        window.location.reload(true);
+      }
       this.name = "";
       this.email = "";
       this.phone = "";
       this.people = "";
       this.message = "";
-      console.log(this.name);
-      console.log(this.email);
-      console.log(this.phone);
-      console.log(this.people);
-      console.log(this.message);
-      alert(
-        "Thank you for your message! Your Message has been sent successfully!"
-      );
     },
   },
 };
+// this.$router.push({ name: "home" });
 </script>
 
 <style lang="sass" scoped>
@@ -165,11 +169,6 @@ export default {
             color: #424142
             font-family: "Raleway"
     .Data
-        // display: flex
-        // flex-direction: column
-        // align-items: center
-        // justify-content: space-around
-
         .OrderPlacement
             justify-content: center
             .inputs
@@ -277,11 +276,6 @@ export default {
               justify-content: space-between
               .inputs
                   margin: 0px
-
-                  // padding: 0px
-                  // justify-content: center
-                  // display: flex
-                  // flex-direction: column
                   .form-group
                       margin: 10px 50px 10px 50px
                       padding: 0px

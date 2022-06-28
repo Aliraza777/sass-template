@@ -16,9 +16,9 @@
           We create and deliver delectable meals for you, made from scratch with
           fresh,healthy and locally grown ingredieants.
         </div>
-        <div class="submitBtn">
-          <p class="btn">Submit</p>
-        </div>
+        <button class="submitBtn">
+          <a href="#order-form" class="btn">Submit</a>
+        </button>
       </div>
       <div class="dishImage">
         <img src="../assets/dish-image.png" />
@@ -73,16 +73,22 @@ export default {};
           filter: drop-shadow(0px 30px 20px rgba(0,0,0,0.13))
           background-color: #ffffff
           border: 2px solid #ffc400
+          text-align: center
+          display: flex
+          flex-direction: row
+          justify-content: center
+          align-items: center
+          &:hover
+              cursor: pointer
           .btn
-            text-align: center
+            text-decoration: none
             text-transform: uppercase
             font-size: 16px
             letter-spacing: 1px
             color: #707070
             font-weight: 700
             font-family: "Montserrat"
-            &:hover
-              cursor: pointer
+
       .dishImage
         position: absolute
         top: 8%
@@ -129,8 +135,13 @@ export default {};
           filter: drop-shadow(0px 30px 20px rgba(0,0,0,0.13))
           background-color: #ffffff
           border: 2px solid #ffc400
+          text-align: center
+          display: flex
+          flex-direction: row
+          justify-content: center
+          align-items: center
           .btn
-            text-align: center
+            text-decoration: none
             text-transform: uppercase
             font-size: 16px
             letter-spacing: 1px
