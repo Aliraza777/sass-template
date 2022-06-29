@@ -62,6 +62,7 @@ $link-hover-color: #00ccbb
   font-family: "Rounded"
 nav
   float: right
+  margin: 0 50px 0 0
   ul
     list-style: none
     margin: 0
@@ -125,34 +126,45 @@ nav
   height: $nav-height
   width: $nav-height
 @media only screen and (max-width: $breakpoint)
+  .brand
+    margin: 10px 0 0 10px
+    padding: 0
   .nav-mobile
     display: block
   nav
     width: 100%
-    padding: $nav-height 0 15px
+    // padding: $nav-height 0 15px
+    padding: $nav-height 0 0 0
+    margin: 0 0 0 0
     ul
       // display: none
       background-color: $nav-background
       li
         float: none
         &.active
-          margin: 10px 10px 0 0
-          padding-bottom: 10px
-          width: 180px
+          margin: 0 5px 0 0
+          // padding-bottom: 10px
+          width: 300px
           height: 80px
-          background-color: $nav-background
+          background-color: #00ccbb
           display: flex
           flex-direction: row
+          align-content: center
           .fa-phone
+            margin: 0 10px 0 0
             color: #6d6d6d
           a
             color: #6d6d6d
+            &:hover::before
+              width: 50%
+
         a
-          padding: 15px
+          padding: 10px 0 0 5px
           line-height: 20px
           &:hover::before
             width: 20%
             padding-left: 30px
+            // margin: 0 0 10px 0
 #nav-toggle
   position: absolute
   left: 10px

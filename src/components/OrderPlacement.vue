@@ -69,6 +69,7 @@
               id="message"
               rows="3"
               placeholder="Please write your message here"
+              maxlength="100"
             ></textarea>
           </div>
         </div>
@@ -243,12 +244,17 @@ export default {
                             font-family: "Montserrat"
             .btn-primary
                 float: right
+                text-transform: uppercase
                 margin: 0 90px 50px 0
                 width: 163px
                 height: 48px
                 border-radius: 11px
                 filter: drop-shadow(0px 18px 11.5px rgba(19,164,186,0.34))
                 background-color: #00ccbb
+                font-size: 16px
+                letter-spacing: 1px
+                color: #ffffff
+                font-family: "Raleway"
 
 @media screen and (max-width: 1380px)
   .container

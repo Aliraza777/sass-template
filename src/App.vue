@@ -43,11 +43,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Raleway:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&family=Work+Sans:wght@200;300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@200;300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@200;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Work+Sans:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
 @font-face {
   font-family: "Montserrat";
   src: local(Montserrat),

@@ -922,21 +922,11 @@ export default {
         width: 100%
         height: 3930px
         filter: drop-shadow(0px 3px 11.5px rgba(0,0,0,0.16))
-        background-image: radial-gradient(circle at center, #00f2de 0%, #00ccbb 100%)
-        background: url('/home/septem/sass-project01/src/assets/backgroud.png') no-repeat
-        center center fixed
-        // -webkit-background-size: cover
-        // -moz-background-size: cover
-        // -o-background-size: cover
-        background-size: 100% 100%
+        background-image: url("/home/septem/sass-project01/src/assets/background-menu.png")
+        // background-color: #00ccbb !important
+
         .tagRow
             display: block
-            // position: relative
-            // display: flex
-            // flex-direction: row
-            // align-items: center
-            // justify-content: center
-            // margin-top: 50px
             .days
               display: none
             .weeks
