@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="main-body" id="app">
     <NavBar></NavBar>
     <SubmitContainer></SubmitContainer>
     <HowItWorks></HowItWorks>
@@ -50,5 +50,11 @@ export default {
   font-family: "Montserrat";
   src: local(Montserrat),
     url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
+.main-body {
+  width: 100%;
+  height: 100%;
+  background-color: #00ccbb;
 }
 </style>

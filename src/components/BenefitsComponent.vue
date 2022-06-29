@@ -133,7 +133,7 @@ export default {};
                 font-weight: 400
                 font-family: "Open Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 width: 380px
                 height: 244px
                 border-radius: 30px
@@ -181,7 +181,7 @@ export default {};
                 font-weight: 400
                 font-family: "Open Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 width: 380px
                 height: 244px
                 border-radius: 30px
@@ -230,7 +230,7 @@ export default {};
                 font-weight: 400
                 font-family: "Open Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 width: 380px
                 height: 244px
                 border-radius: 30px
@@ -278,7 +278,7 @@ export default {};
                 font-weight: 400
                 font-family: "Open Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 width: 1200px
                 height: 252px
                 border-radius: 30px

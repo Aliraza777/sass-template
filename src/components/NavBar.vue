@@ -9,14 +9,14 @@
         <a id="nav-toggle" href="#!"><span></span> </a>
       </div>
       <ul class="nav-list">
-        <li><a href="#!">Menu</a></li>
-        <li><a href="#!">Contact us</a></li>
+        <li><a href="#monthly-menu">Menu</a></li>
+        <li><a href="#order-form">Contact us</a></li>
         <li class="active">
           <font-awesome-icon
             icon="fas fa-phone"
             class="fa-phone"
           ></font-awesome-icon>
-          <a href="#!">+92 321 4211 214</a>
+          <a href="#contact-us">+92 321 4211 214</a>
         </li>
       </ul>
     </nav>

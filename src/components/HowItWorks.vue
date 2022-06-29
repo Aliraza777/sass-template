@@ -95,7 +95,7 @@ export default {};
                 font-weight: 500
                 font-family: "Work Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
                 background-color: #ffffff
                 border: 3px solid #ffc400
@@ -130,7 +130,7 @@ export default {};
                 font-weight: 500
                 font-family: "Work Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
                 background-color: #ffffff
                 border: 3px solid #ffc400
@@ -165,7 +165,7 @@ export default {};
                 font-weight: 500
                 font-family: "Work Sans"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 filter: drop-shadow(0px 10px 11.5px rgba(0,0,0,0.09))
                 background-color: #ffffff
                 border: 3px solid #ffc400

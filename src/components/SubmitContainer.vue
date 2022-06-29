@@ -97,7 +97,7 @@ export default {};
 @media screen and (max-width: 799px)
   .body
     width: 100%
-    height: 799px
+    height: 700px
     .container
       display: flex
       flex-direction: column

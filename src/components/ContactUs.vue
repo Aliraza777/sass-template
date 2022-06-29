@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact-us">
     <div class="contactus-body">
       <div class="logo">
         <img src="../assets/whiteLogo.svg" />

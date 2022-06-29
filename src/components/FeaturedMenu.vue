@@ -188,7 +188,7 @@ export default {
                 font-weight: 600
                 font-family: "Montserrat"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 order-radius: 30px
                 filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                 background-color: #ffffff
@@ -237,7 +237,7 @@ export default {
                 font-weight: 600
                 font-family: "Montserrat"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 order-radius: 30px
                 filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                 background-color: #ffffff
@@ -287,7 +287,7 @@ export default {
                 font-weight: 600
                 font-family: "Montserrat"
             &:hover
-                cursor: pointer
+                // cursor: pointer
                 order-radius: 30px
                 filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                 background-color: #ffffff
@@ -394,7 +394,7 @@ export default {
                     font-weight: 600
                     font-family: "Montserrat"
                 &:hover
-                    cursor: pointer
+                    // cursor: pointer
                     order-radius: 30px
                     filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                     background-color: #ffffff
@@ -444,7 +444,7 @@ export default {
                     font-weight: 600
                     font-family: "Montserrat"
                 &:hover
-                    cursor: pointer
+                    // cursor: pointer
                     order-radius: 30px
                     filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                     background-color: #ffffff
@@ -557,7 +557,7 @@ export default {
                   font-weight: 600
                   font-family: "Montserrat"
                   &:hover
-                      cursor: pointer
+                    //   cursor: pointer
                       order-radius: 30px
                       filter: drop-shadow(0 0 26px rgba(0,0,0,0.13))
                       background-color: #ffffff
