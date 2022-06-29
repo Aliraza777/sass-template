@@ -86,12 +86,23 @@ nav
         align-items: center
         .fa-phone
           color: #ffffff
+          margin: 5px 0 5px 0
         a
           font-size: 20px
           letter-spacing: 2px
           color: #ffffff
           font-weight: 700
           font-family: "Montserrat"
+          &::before
+              transition: 300ms
+              height: 3px
+              content: ""
+              position: absolute
+              background-color: $nav-background
+              width: 0%
+              bottom: 0px
+          &:hover::before
+              width: 70%
       a
         text-transform: uppercase
         display: block
@@ -125,8 +136,10 @@ nav
   background: $nav-background
   height: $nav-height
   width: $nav-height
-@media only screen and (max-width: $breakpoint)
+@media screen and (max-width: $breakpoint)
   .brand
+    height: $nav-height
+    width: $nav-height*2
     margin: 10px 0 0 10px
     padding: 0
   .nav-mobile
@@ -152,9 +165,9 @@ nav
           align-content: center
           .fa-phone
             margin: 0 10px 0 0
-            color: #6d6d6d
+            color: #ffffff
           a
-            color: #6d6d6d
+            color: #ffffff
             &:hover::before
               width: 50%
 
