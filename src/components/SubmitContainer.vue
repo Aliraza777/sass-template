@@ -108,7 +108,7 @@ export default {};
           margin-left: -30px
           position: static
           right: 25%
-          top: 10%
+          top: 20%
           width: 70%
       .textData
         .boldText
